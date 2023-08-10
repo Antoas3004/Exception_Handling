@@ -12,6 +12,5 @@ public class ArithmeticException_1 {
 			System.out.println("b is 0");
 		}
 		System.out.println("hello");
-
 	}
 }
