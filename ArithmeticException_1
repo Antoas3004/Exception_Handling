@@ -6,7 +6,8 @@ public class ArithmeticException_1 {
 		// arithmetic exception handling
 		try {
 			System.out.println(a / b);
-		} catch (ArithmeticException e) {// if we know a exception then use that
+		} catch (ArithmeticException e) {
+			// if we know a exception then use that
 			// if we dont know use only exception
 			System.out.println("b is 0");
 		}
