@@ -1,0 +1,12 @@
+public class ArrayIndexOutOfBoundsException {
+
+	public static void main(String[] args) {
+		double a[] = { 1, 2, 3, 4, 5 };
+		try {
+			System.out.println(a[1] / a[5]);
+		} catch (Exception e) {
+			System.out.println("Array Index Out Of Bounds");
+		}
+		System.out.println(a[1] / a[4]);
+	}
+}
