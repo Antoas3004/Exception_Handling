@@ -1,0 +1,58 @@
+public class ExceptionHandling {
+
+	public static void main(String[] args) {
+		String s = null;
+		System.out.println("hai");
+		System.out.println(10 / 10);
+		System.out.println("2");
+
+		// Arithmetic Exception
+		try {
+			System.out.println(100 / 0);
+		} catch (Exception e) {
+			System.out.println("/ by 0");
+		}
+
+		// nullpointerexception
+		try {
+			System.out.println(s.charAt(1));
+		} catch (Exception e) {
+			System.out.println("String is null");
+		}
+
+		System.out.println("oooo");
+
+		// NumberFormatException
+		String a = "abc";
+		try {
+			int i = Integer.parseInt(a);
+		} catch (Exception e) {
+			System.out.println("converting String to integer");
+		}
+
+		System.out.println(25 / 5);
+
+		// ArrayIndexOutOfBoundsException
+		double x[] = { 1, 2, 3, 4, 5 };
+		try {
+			System.out.println(x[1] / x[5]);
+		} catch (Exception e) {
+			System.out.println("index out of bond");
+		}
+
+		System.out.println(x[1] / x[4]);
+
+		// StringIndexOurOfBounds
+		String y = "anto";
+		try {
+			System.out.println(y.charAt(4));
+		} catch (Exception e) {
+			System.out.println("String Index Our Of Bounds");
+		}
+
+		System.out.println(y.charAt(3));
+		System.out.println(50 / 1);
+		System.out.println("anto");
+
+	}
+}
