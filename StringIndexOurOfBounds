@@ -1,0 +1,12 @@
+public class StringIndexOurOfBounds {
+
+	public static void main(String[] args) {
+		String s = "anto";
+		try {
+			System.out.println(s.charAt(4));
+		} catch (Exception e) {
+			System.out.println("String index ou of bounds");
+		}
+		System.out.println(s.charAt(3));
+	}
+}
